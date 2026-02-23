@@ -54,7 +54,7 @@ When building both, `dist/` is left with the Chrome manifest so you can load it 
 
 ### 3. Test locally
 - **Chrome:** Go to `chrome://extensions`, enable Developer mode, click "Load unpacked", select `dist/`.
-- **Firefox:** Go to `about:debugging#/runtime/this-firefox`, click "Load Temporary Add-on", select `dist/manifest.json`.
+- **Firefox:** Go to `about:debugging#/runtime/this-firefox`, click "Load Temporary Add-on", select `dist/web-ext-artifacts/r3bl_shortlink-*.zip`.
 
 ### 4. Publish when ready
 ```sh
@@ -85,6 +85,23 @@ When using `npm run watch` or `npm run build` directly (without `make-distro.sh`
 cp public/manifest.chrome.json dist/manifest.json   # For Chrome
 cp public/manifest.firefox.json dist/manifest.json  # For Firefox
 ```
+
+## Popup Commands
+
+Commands are typed in the popup input field and executed with Enter:
+- `<name>` — Save current tab(s) as a shortlink
+- `go <name>` or `g <name>` — Open a shortlink
+- `delete <name>` or `d <name>` — Delete a shortlink
+- `copy <name>` or `c <name>` — Copy shortlink URLs to clipboard
+- `exp` or `e` — Export all shortlinks to clipboard as JSON + trigger download
+- `imp` or `i` — Show import field for pasting/dropping JSON
+
+Commands with arguments (`go`, `delete`, `copy`) require a space + argument. Commands without arguments (`exp`, `imp`) use exact match — no trailing space needed.
+
+## Build Artifacts
+
+- `shortlink.zip` — Chrome extension (tracked in git)
+- `r3bl_shortlink-*.xpi` — Signed Firefox extension (tracked in git, old versions pruned on publish)
 
 ## Storage
 
