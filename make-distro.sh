@@ -91,6 +91,8 @@ publish_firefox() {
   echo "Signing and publishing Firefox extension to AMO..."
   cd dist
   $WEB_EXT sign --api-key=$MOZ_AMO_KEY --api-secret=$MOZ_AMO_SECRET --channel listed || exit 1
+  # Remove old .xpi files before copying the new one.
+  rm -f ../r3bl_shortlink-*.xpi
   cp web-ext-artifacts/r3bl_shortlink-*.xpi ../ || exit 1
   cd ..
   echo "Done: r3bl_shortlink-*.xpi (signed and published)"
