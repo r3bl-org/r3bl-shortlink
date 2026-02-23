@@ -1,0 +1,51 @@
+{
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{6cb822ee-13fa-4b44-babf-be5e2c5a27f1}"
+    }
+  },
+  "manifest_version": 3,
+  "name": "R3BL Shortlink",
+  "description": "Make go links",
+  "version": "4.16",
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_title": "Click to make go link for URL",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "32": "icon32.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "omnibox": {
+    "keyword": "go"
+  },
+  "background": {
+    "scripts": [
+      "js/background.js"
+    ]
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Alt+L",
+        "mac": "Alt+L"
+      },
+      "description": "Make a go link for URL in address bar"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage",
+    "clipboardWrite",
+    "downloads"
+  ]
+}

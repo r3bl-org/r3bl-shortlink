@@ -99,7 +99,7 @@ export function App() {
           ref={inputReference}
           autoFocus={true}
           id="shortlink-input"
-          placeholder='Type a name for your tab(s) or "copy/c, go/g, delete/d <name>" => Enter'
+          placeholder='Type a name for your tab(s) or "copy/c, go/g, delete/d <name>, exp/e, imp/i" => Enter'
           onChange={(event) => handleOnChange(event, setUserInputText)}
           onKeyDown={(event) => handleEnterKey(event, userInputText)}
         />

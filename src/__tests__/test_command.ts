@@ -74,9 +74,9 @@ describe("parse command", () => {
     expect(command.arg).toBe("arg1 arg2")
   })
 
-  it("returns import for import", () => {
+  it("returns import for imp/i", () => {
     {
-      const command = convertUserInputTextIntoCommand("import") as Command.Import
+      const command = convertUserInputTextIntoCommand("imp") as Command.Import
       expect(command.kind).toBe("import")
     }
     {
@@ -85,9 +85,9 @@ describe("parse command", () => {
     }
   })
 
-  it("returns import for export", () => {
+  it("returns export for exp/e", () => {
     {
-      const command = convertUserInputTextIntoCommand("export") as Command.Export
+      const command = convertUserInputTextIntoCommand("exp") as Command.Export
       expect(command.kind).toBe("export")
     }
 

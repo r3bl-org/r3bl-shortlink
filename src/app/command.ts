@@ -74,10 +74,10 @@ export const CommandName = {
   DeleteShort:           "d ",
   CopyToClipboard:       "copy ",
   CopyToClipboardShort:  "c ",
-  Export:                "export ",
-  ExportShort:           "e ",
-  Import:                "import ",
-  ImportShort:           "i ",
+  Export:                "exp",
+  ExportShort:           "e",
+  Import:                "imp",
+  ImportShort:           "i",
   Debug:                 "::debug:: ",
 }
 
@@ -95,6 +95,8 @@ export function tryToParse(commandName: string, userInputText: string): types.Op
 }
 
 export function convertUserInputTextIntoCommand(userInputText: string): Command.Type {
+  const trimmed = userInputText.trim()
+
   // User typed nothing & just pressed enter.
   if (userInputText !== undefined && userInputText.length === 0) {
     return {
@@ -138,33 +140,15 @@ export function convertUserInputTextIntoCommand(userInputText: string): Command.
     }
   }
 
-  // Export shortlink using `export`.
-  it = tryToParse(CommandName.Export, userInputText)
-  if (it.kind === "some") {
+  // Export shortlinks using `exp` or `e` (exact match, no arguments).
+  if (trimmed === CommandName.Export || trimmed === CommandName.ExportShort) {
     return {
       kind: "export",
     }
   }
 
-  // Export shortlink using `e`.
-  it = tryToParse(CommandName.ExportShort, userInputText)
-  if (it.kind === "some") {
-    return {
-      kind: "export",
-    }
-  }
-
-  // Import shortlink using `import`.
-  it = tryToParse(CommandName.Import, userInputText)
-  if (it.kind === "some") {
-    return {
-      kind: "import",
-    }
-  }
-
-  // Import shortlink using `i`.
-  it = tryToParse(CommandName.ImportShort, userInputText)
-  if (it.kind === "some") {
+  // Import shortlinks using `imp` or `i` (exact match, no arguments).
+  if (trimmed === CommandName.Import || trimmed === CommandName.ImportShort) {
     return {
       kind: "import",
     }
