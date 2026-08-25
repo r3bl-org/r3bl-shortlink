@@ -1,10 +1,15 @@
 # R3BL Shortlink - a browser extension written in Typescript and React
 
+[![Chrome Web Store](https://img.shields.io/badge/Chrome_Web_Store-R3BL_Shortlink-4285F4?logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/r3bl-shortlink/ffhfkgcfbjoadmhdmdcmigopbfkddial)
+[![Firefox Add-on](https://img.shields.io/badge/Firefox_Add--on-R3BL_Shortlink-FF7139?logo=firefox&logoColor=white)](https://addons.mozilla.org/en-US/firefox/addon/r3bl-shortlink/)
+
 Table of contents:
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
+- [Install the extension 📦](#install-the-extension-)
+- [Demo of it in action](#demo-of-it-in-action)
 - [What is it?](#what-is-it)
 - [Prerequisites](#prerequisites)
 - [Option](#option)
@@ -17,16 +22,18 @@ Table of contents:
   - [Visual Studio Code](#visual-studio-code)
 - [Load extension to chrome](#load-extension-to-chrome)
 - [Test](#test)
+- [Firefox version](#firefox-version)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+## Install the extension 📦
+
+- **Chrome Web Store**: [Install R3BL Shortlink for Google Chrome](https://chromewebstore.google.com/detail/r3bl-shortlink/ffhfkgcfbjoadmhdmdcmigopbfkddial)
+- **Firefox Add-ons**: [Install R3BL Shortlink for Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/r3bl-shortlink/)
+
 ## Demo of it in action
 
-
-
 https://github.com/r3bl-org/shortlink/assets/2966499/fbe8df3f-2ad9-43b8-8a13-ad43e09a9bed
-
-
 
 ## What is it?
 
@@ -42,8 +49,8 @@ This is equivalent to creating a bookmark. Except it is much faster and you can 
 your chrome address bar, and then press <kbd>Tab</kbd>, then type "banking". Press <kbd>Enter</kbd>
 and your tabs will reopen!
 
-Currently this browser extension is only available for Chrome. If you would like to contribute there
-are plenty of issues that need to be worked on. And one of them is porting this to Firefox and Edge.
+This browser extension is available for both Google Chrome and Mozilla Firefox. If you would like to contribute there
+are plenty of issues that need to be worked on.
 
 ## Prerequisites
 
@@ -109,7 +116,7 @@ Run `npx jest` or `npm run test`.
 
 ## Firefox version
 
-- [Listing](https://addons.mozilla.org/en-US/developers/addon/r3bl-shortlink/)
+- [Listing on Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/r3bl-shortlink/)
 - [PR with changes made for this version](https://github.com/r3bl-org/shortlink/pull/40)
 - [Info on porting from chrome to firefox extension](https://decembergarnetsmith.com/2024/05/10/how-to-port-an-mv3-chrome-extension-to-firefox/)
 - [Differences between chrome and firefox extensions](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/background#browser_support)
