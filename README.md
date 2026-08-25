@@ -1,7 +1,11 @@
 # R3BL Shortlink - a browser extension written in Typescript and React
 
-[![Chrome Web Store](https://img.shields.io/badge/Chrome_Web_Store-R3BL_Shortlink-4285F4?logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/r3bl-shortlink/ffhfkgcfbjoadmhdmdcmigopbfkddial)
-[![Firefox Add-on](https://img.shields.io/badge/Firefox_Add--on-R3BL_Shortlink-FF7139?logo=firefox&logoColor=white)](https://addons.mozilla.org/en-US/firefox/addon/r3bl-shortlink/)
+> 📦 **Install the Extension:**
+> - [**Chrome Web Store**](https://chromewebstore.google.com/detail/r3bl-shortlink/ffhfkgcfbjoadmhdmdcmigopbfkddial) (Chrome, Brave, Edge, Arc)
+> - [**Firefox Browser Add-ons**](https://addons.mozilla.org/en-US/firefox/addon/r3bl-shortlink/) (Firefox)
+
+[![Install on Chrome Web Store](https://img.shields.io/badge/Install_on-Chrome_Web_Store-4285F4?logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/r3bl-shortlink/ffhfkgcfbjoadmhdmdcmigopbfkddial)
+[![Install on Firefox](https://img.shields.io/badge/Install_on-Firefox_Add--ons-FF7139?logo=firefox&logoColor=white)](https://addons.mozilla.org/en-US/firefox/addon/r3bl-shortlink/)
 
 Table of contents:
 
