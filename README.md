@@ -4,9 +4,6 @@
 > - [**Chrome Web Store**](https://chromewebstore.google.com/detail/r3bl-shortlink/ffhfkgcfbjoadmhdmdcmigopbfkddial) (Chrome, Brave, Edge, Arc)
 > - [**Firefox Browser Add-ons**](https://addons.mozilla.org/en-US/firefox/addon/r3bl-shortlink/) (Firefox)
 
-[![Install on Chrome Web Store](https://img.shields.io/badge/Install_on-Chrome_Web_Store-4285F4?logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/r3bl-shortlink/ffhfkgcfbjoadmhdmdcmigopbfkddial)
-[![Install on Firefox](https://img.shields.io/badge/Install_on-Firefox_Add--ons-FF7139?logo=firefox&logoColor=white)](https://addons.mozilla.org/en-US/firefox/addon/r3bl-shortlink/)
-
 Table of contents:
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
